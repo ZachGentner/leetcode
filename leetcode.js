@@ -54,7 +54,7 @@
 var romanToInt = function(s) {
     let decVal = 0;
 
-    const unRom = {
+    const romNum = {
         I: 1,
         V: 5,
         X: 10,
@@ -62,19 +62,10 @@ var romanToInt = function(s) {
         C: 100,
         D: 500,
         M: 1000
-    }
+    };
 
-    const biRom = {
-        IV: 4,
-        IX: 9,
-        XL: 40,
-        XC: 90,
-        CD: 400,
-        CM: 900,
-    }
 
-    //Special cases are IV, IX, XL, XC, CD, CM
-    console.log(biRom.length)
-
-    console.log(romNum)
+    return decVal;
 };
+
+console.log(romanToInt("MCXLIV"));
