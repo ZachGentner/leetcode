@@ -72,13 +72,9 @@
 
 //=====================================================================================================================================================================================
 
-// 14. LONGEST COMMON PREFIX
+// Valid Parentheses
+var isValid = function(s) {
 
-var longestCommonPrefix = function(strs) {
-    let prefix = "";
-
-    for (let word in strs) {
-        prefix = word[1];
-        console.log(word[1]);
-    }
 };
+
+isValid("()[]{}}}())[][][)()[]");
