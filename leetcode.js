@@ -18,7 +18,7 @@
 //=====================================================================================================================================================================================
 
 //INCOMPLETE!
-// // 2. ADD TWO NUMBERS
+// 2. ADD TWO NUMBERS
 // var addTwoNumbers = function(l1, l2) {
 //     //Reverse the order of both lists, join them as a string, and convert them into a number.
 //     num1 = Number(l1.reverse().join(''));
@@ -31,22 +31,50 @@
 
 //=====================================================================================================================================================================================
 
+// 9. PALINDROME NUMBER
+// a. WITH STRING CONVERSION
+// var isPalindrome = function(x) {
+//     str = x.toString();
+//     mid = str.length % 2 === 0 ? str.length / 2 : (str.length - 1) / 2;
 
-//PALINDROME NUMBER
-// 1. WITH STRING CONVERSION
-var isPalindrome = function(x) {
-    str = x.toString();
-    mid = str.length % 2 === 0 ? str.length / 2 : (str.length - 1) / 2;
+//     for (let i = 0; i < mid; i++) {
+//         console.log(str[i] + " " + str[str.length - 1 - i]);
+//         if (str[i] !== str[(str.length - 1) - i]) {
+//             return false;
+//         }
+//     }
 
-    for (let i = 0; i < mid; i++) {
-        console.log(str[i] + " " + str[str.length - 1 - i]);
-        if (str[i] !== str[(str.length - 1) - i]) {
-            return false;
-        }
+//     return true;
+// };
+
+//=====================================================================================================================================================================================
+
+// 12. ROMAN TO INTEGER
+
+var romanToInt = function(s) {
+    let decVal = 0;
+
+    const unRom = {
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000
     }
 
-    return true;
-};
+    const biRom = {
+        IV: 4,
+        IX: 9,
+        XL: 40,
+        XC: 90,
+        CD: 400,
+        CM: 900,
+    }
 
-isPalindrome(101);
-console.log(isPalindrome(101));
+    //Special cases are IV, IX, XL, XC, CD, CM
+    console.log(biRom.length)
+
+    console.log(romNum)
+};
