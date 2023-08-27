@@ -51,21 +51,34 @@
 
 // 12. ROMAN TO INTEGER
 
-var romanToInt = function(s) {
-    let decVal = 0;
+// var romanToInt = function(s) {
+//     let decVal = 0;
 
-    const romNum = {
-        I: 1,
-        V: 5,
-        X: 10,
-        L: 50,
-        C: 100,
-        D: 500,
-        M: 1000
-    };
+//     const romNum = {
+//         I: 1,
+//         V: 5,
+//         X: 10,
+//         L: 50,
+//         C: 100,
+//         D: 500,
+//         M: 1000
+//     };
 
 
-    return decVal;
+//     return decVal;
+// };
+
+// console.log(romanToInt("MCXLIV"));
+
+//=====================================================================================================================================================================================
+
+// 14. LONGEST COMMON PREFIX
+
+var longestCommonPrefix = function(strs) {
+    let prefix = "";
+
+    for (let word in strs) {
+        prefix = word[1];
+        console.log(word[1]);
+    }
 };
-
-console.log(romanToInt("MCXLIV"));
