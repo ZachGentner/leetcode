@@ -61,3 +61,13 @@
 // function countSheeps(arrayOfSheeps) {
 //     return arrayOfSheeps.filter(Boolean).length;
 //   }
+
+// =====================================================================================================================================================================================
+
+//OPPOSITE NUMBER
+
+function opposite(number) {
+    console.log(number * -1);
+  }
+
+  opposite(1);
