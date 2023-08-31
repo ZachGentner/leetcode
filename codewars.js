@@ -41,3 +41,23 @@
 // }
 
 // =====================================================================================================================================================================================
+
+//COUNTING SHEEP...
+
+//USING A FOR LOOP
+// function countSheeps(arrayOfSheep) {
+//     let count = 0;
+    
+//     for (let sheep in arrayOfSheep) { //Iterate through the entire array.
+//       if (arrayOfSheep[sheep] === true) { //If the index 'sheep' in 'arrayOfSheep' is equal to true, increment the counter by one.
+//         count++;
+//       }
+//     }
+
+//     return count;
+//   }
+
+//USING THE FILTER ARRAY METHOD
+// function countSheeps(arrayOfSheeps) {
+//     return arrayOfSheeps.filter(Boolean).length;
+//   }
