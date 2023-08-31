@@ -66,8 +66,27 @@
 
 //OPPOSITE NUMBER
 
-function opposite(number) {
-    console.log(number * -1);
-  }
+// function opposite(number) {
+//     return number != 0 ? number * -1 : 0; //Avoids -0 case, though it's not necessary to pass test cases.
+//   }
 
-  opposite(1);
+// =====================================================================================================================================================================================
+
+//CONVERT A STRING INTO AN ARRAY
+
+// function stringToArray(string){
+// 	return string.split(" ");
+// }
+
+// =====================================================================================================================================================================================
+
+//ABBREVIATE A TWO WORD NAME
+
+// function abbrevName(name){
+//     return name.toUpperCase() //Capitalize the string.
+//                .split(" ") //Create an array of both first and last name.
+//                .map((x) => x[0]) //Createa new array of only the first and last inital.
+//                .join("."); //Join the two array elements into a string with a '.'
+// }
+
+// =====================================================================================================================================================================================
