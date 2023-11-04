@@ -51,19 +51,32 @@
 
 // 12. ROMAN TO INTEGER
 
-// var romanToInt = function(s) {
+// var romanToInt = function(string) {
 //     let decVal = 0;
 
+//     // Define an Object literal of Roman symbols and their Numeric equivalents.
 //     const romNum = {
 //         I: 1,
-//         V: 5, //IV = 9
-//         X: 10, //IX = 9
-//         L: 50, //LC = 40
-//         C: 100, //
+//         V: 5,
+//         X: 10,
+//         L: 50,
+//         C: 100,
 //         D: 500,
 //         M: 1000
 //     };
 
+//     // Convert special cases into equivalents.
+//     string = string.replace('IV', 'IIII')
+//                    .replace('IX', "VIIII")
+//                    .replace("XL", "XXXX")
+//                    .replace("XC", "LXXXX")
+//                    .replace("CD", "CCCC")
+//                    .replace("CM", "DCCCC");
+
+//     // Iterate through every character in the revised string and add its value to the total.
+//     for (let char in string) {
+//         decVal += romNum[string[char]];
+//     }
 
 //     return decVal;
 // };
@@ -78,3 +91,14 @@
 // };
 
 // isValid("()[]{}}}())[][][)()[]");
+
+// var addTwoNumbers = function(l1, l2) {
+//     num1 = Number(l1.reverse().join(''));
+//     console.log(num1);
+//     num2 = Number(l2.reverse().join(''));
+//     console.log(num2);
+    
+//     return Array.from(String(num1 + num2)).reverse();
+// };
+
+// console.log(addTwoNumbers([2,4,3], [5,6,4]));
